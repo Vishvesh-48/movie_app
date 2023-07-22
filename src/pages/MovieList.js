@@ -12,9 +12,11 @@ export const MovieList = ({apiPath ,title}) => {
       <section className="max-w-4xl mx-auto py-7">
         <div className="flex justify-start flex-wrap other:justify-evenly">
           
-          {movies.map((movie)=>(
+          {
+          movies.map((movie)=>(
               <Card key={movie.id} movie={movie}/>
-          ))}
+          ))
+          }
           
         </div>
       </section>
